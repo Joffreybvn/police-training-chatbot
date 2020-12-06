@@ -11,8 +11,13 @@
 </p>
 
 
-
 - Lists all situations present in the application
+
+  - Harassement
+  - Child Abuse
+  - Family Harassement
+  - Rape
+  
 - Each box is a button, with an image and a title. On click, the policeman arrives on a chat.
 - Like the Netflix homepage, but way clearer and simpler
 
