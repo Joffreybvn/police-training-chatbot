@@ -1,0 +1,16 @@
+/* style globale (pour le style globale qui ne bougera jamais : body, h1, p etc) */
+
+body {
+    font-family: 'Roboto';
+    // color: $color-red;
+}
+.logo-police-svg {
+    width: 35px;
+    padding: 12px;
+    .cls-1 {
+        fill: $secondaryColor;
+    }
+    .cls-2 {
+        fill: $white;
+    }
+}

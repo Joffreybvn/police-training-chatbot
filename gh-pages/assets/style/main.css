@@ -1,0 +1,107 @@
+@import url("resets/reset.css");
+@import url("librairies/lib.css");
+/* MODULES */
+/* font face & cie */
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+/* Fonctions (Mixins etc) */
+/*********************** C O N F I G *************************/
+/*************************************************************/
+/* style globale (pour le style globale qui ne bougera jamais : body, h1, p etc) */
+body {
+  font-family: 'Roboto';
+}
+
+.logo-police-svg {
+  width: 35px;
+  padding: 12px;
+}
+
+.logo-police-svg .cls-1 {
+  fill: #004d9f;
+}
+
+.logo-police-svg .cls-2 {
+  fill: white;
+}
+
+/* COMPOSANTES */
+.main-nav {
+  height: 60px;
+  background-color: #004d9f;
+}
+
+.main-nav .exit {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 22px;
+}
+
+.content-item h3 {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.content-item .grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 50px;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  padding: 30px;
+}
+
+.content-item .grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+}
+
+.content-item .grid-item .title {
+  height: 40px;
+  background-color: #004d9f;
+  border-radius: 10px 10px 0 0;
+  padding: 6px;
+  padding-left: 15px;
+  color: white;
+}
+
+.content-item .grid-item .content {
+  background-image: url("../../assets/img/photo-01.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 7px 5px #b4b4b4;
+          box-shadow: 0px 7px 5px #b4b4b4;
+  border-radius: 0 0 50px 10px;
+  height: 90px;
+}
+
+.content-item .grid-item .content .text {
+  border-radius: 0 0 50px 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+}
+
+@media screen and (min-width: 640px) {
+  .content-item .grid-container {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 50px;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    padding: 30px;
+  }
+  .content-item .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+  }
+}
+
+/* PAGES */
+/*# sourceMappingURL=main.css.map */
