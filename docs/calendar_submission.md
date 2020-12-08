@@ -4,7 +4,7 @@
 **Our prototype must be ready for Thursday @ 10h00**.
 
 <p align="center">
-  <img src="docs/images/calendar.png">
+  <img src="images/calendar.png">
 </p>
 
 ### Events not to be missed
