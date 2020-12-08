@@ -1,4 +1,14 @@
 
+# UI to survive the pitch
+The pitch will be short (2-3 minutes), and remote (via screen sharing). The UI must therefore be simple and clear, in order to survive the small screens and the low quality of some internet connections. Our viewers must understand and appreciate our application in a blink of an eye.
+
+So:
+- A simple UI
+- No small text
+- Text where (and only where) it is needed.
+- Clear images
+
+
 # Menu page
 
 - Application home page
