@@ -1,11 +1,19 @@
 version: "2.0"
+
 stories:
+
+- story: raped path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+
 - story: happy path
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
+
 - story: sad path 1
   steps:
   - intent: greet
@@ -15,6 +23,7 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
+
 - story: sad path 2
   steps:
   - intent: greet
@@ -24,25 +33,3 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
-- story: alone path 1
-  steps:
-  - intent: i_am_alone
-  - action: utter_i_am_alone
-  - intent: console_info
-  - action: utter_console_info
-  - intent: bus_info
-  - action: utter_bus_info
-  - intent: time_info
-  - action: utter_time_info
-  - intent: location_info
-  - action: utter_location_info
-  - intent: affirm_info
-  - action: utter_affirm_info
-  - intent: action_default_fallback
-  - action: utter_action_default_fallback
-
-- story: Story from Conversation ID 87b7f79478484b0092dc17042576a4e1
-  steps:
-  - action: utter_location_info
-  - intent: location_info
-  - action: utter_affirm_info
