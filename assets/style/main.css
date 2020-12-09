@@ -60,10 +60,14 @@ body {
   font-size: 30px;
 }
 
+.content-item .grid-item:hover .title {
+  background-color: #006bdc;
+}
+
 .content-item .grid-item .title {
   height: 40px;
   background-color: #004d9f;
-  border-radius: 10px 10px 0 0;
+  border-radius: 8px 10px 0 0;
   padding: 6px;
   padding-left: 15px;
   color: white;
