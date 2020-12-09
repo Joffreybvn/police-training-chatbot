@@ -1,0 +1,54 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- i_am_alone
+- see_something
+- bus_info
+- safe_place
+- location_info
+- time_info
+- welcome
+- console_info
+- affirm_info
+- chitchat
+- action_default_fallback
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_i_am_alone:
+  - text: Hey! Dont Worry, we are here to help you.
+  utter_see_something:
+  - text: Do you see any crowd near you which you feel safe.
+  utter_bus_info:
+  - text: In how many minutes you see bus?
+  utter_safe_place:
+  - text: I suggest you to go somewhere which you feel safe or click on patrol alert.
+  utter_console_info:
+  - text: Hey!Dont worry, we are here to help you.
+  utter_time_info:
+  - text: How long you have been waiting?
+  utter_location_info:
+  - text: Can you send your location?
+  utter_affirm_info:
+  - text: The patrol will be reaching you.
+  utter_action_default_fallback:
+  - text: tell more what you feel

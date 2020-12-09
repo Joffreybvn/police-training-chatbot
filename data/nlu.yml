@@ -1,0 +1,160 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+
+- intent: i_am_alone
+  examples: |
+    - i am alone
+    - i am afraid
+    - please help
+    - please help me
+    - find
+    - i am scared
+    - i am at this location
+    - i am at bus stop
+
+
+- intent: see_something
+  examples: |
+    - weired
+    - guys
+    - drunk
+    - approaching
+
+- intent: bus_info
+  examples: |
+    - information
+    - times
+    - arrival
+    - another bus
+    - status
+    - waiting for a bus
+    - looking for a bus
+    - waiting for long time
+    - waiting
+
+- intent: time_info
+  examples: |
+    - for 5 mins
+    - for 30 mins
+    - its been 10 mins
+    - its been 40 mins
+
+- intent: location_info
+  examples: |
+    - i am at bus stop near Ghent
+    - i am at Ghent
+    - Ghent near petrol bunk
+
+- intent: safe_place
+  examples: |
+    - place
+    - running vehicles
+    - patroling
+    - people
+
+- intent: console_info
+  examples: |
+    - Hey, dont worry! we are here to help you.
+- intent: affirm_info
+  examples: |
+    - yes
+    - no
+    - indeed
+    - of course
+    - thank you
+
+- intent: action_default_fallback
+  examples: |
+    - Keep on reaching us
