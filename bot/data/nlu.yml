@@ -1,6 +1,10 @@
 version: "2.0"
 
 nlu:
+
+# General conversation intent
+# ----------------------------------------------------------------------------
+
 - intent: greet
   examples: |
     - hey
@@ -50,39 +54,24 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+# Rape - Open questions
+# -----------------------------------------------------------------------------
 
-- intent: mood_unhappy
+- intent: ask_what_happened
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - what happened ?
+    - what has happened ?
+    - hhat happened to you ?
+    - tell me what happened
+
+- intent: ask_where_happened
+  examples: |
+    - where did it happen ?
+    - where did it take place ?
+    - where that occurred ?
+
+# Other intents
+# -----------------------------------------------------------------------------
 
 - intent: bot_challenge
   examples: |

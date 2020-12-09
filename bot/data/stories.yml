@@ -4,32 +4,15 @@ stories:
 
 - story: raped path 1
   steps:
+
+    # Say hello
     - intent: greet
     - action: utter_greet
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+    # Open question: what has happened
+    - intent: ask_what_happened
+    - action: utter_tell_story
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+    # Open question: where it happened
+    - intent: ask_where_happened
+    - action: utter_tell_where
