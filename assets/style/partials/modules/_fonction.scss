@@ -1,1 +1,11 @@
 /* Fonctions (Mixins etc) */
+@use "sass:list";
+
+$cta-list: theft terrorism rape;
+
+// @each permet de parcourir une liste :
+@each $item in $cta-list {
+    .content.#{$item} {
+                background-image: url('../../assets/img/#{$item}.jpg');
+    }
+}

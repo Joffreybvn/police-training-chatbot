@@ -8,30 +8,58 @@
 }
 
 /* Fonctions (Mixins etc) */
+@use "sass:list";
+.content.theft {
+  background-image: url("../../assets/img/theft.jpg");
+}
+
+.content.terrorism {
+  background-image: url("../../assets/img/terrorism.jpg");
+}
+
+.content.rape {
+  background-image: url("../../assets/img/rape.jpg");
+}
+
 /*********************** C O N F I G *************************/
 /*************************************************************/
 /* style globale (pour le style globale qui ne bougera jamais : body, h1, p etc) */
 body {
-  font-family: 'Roboto';
+  font-family: Helvetica, sans-serif;
+  color: #2f2f2f;
 }
 
-.logo-police-svg {
-  width: 35px;
+h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  text-align: center;
+  background-color: #e2e2e2;
   padding: 12px;
-}
-
-.logo-police-svg .cls-1 {
-  fill: #004d9f;
-}
-
-.logo-police-svg .cls-2 {
-  fill: white;
+  font-weight: bold;
 }
 
 /* COMPOSANTES */
 .main-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   height: 60px;
   background-color: #004d9f;
+}
+
+.main-nav img {
+  max-width: 40px;
+  position: absolute;
+  left: 15px;
+  top: 10px;
 }
 
 .main-nav .exit {
@@ -41,9 +69,28 @@ body {
   font-size: 22px;
 }
 
-.content-item h3 {
-  padding-top: 30px;
-  padding-left: 30px;
+.main-nav ul {
+  position: absolute;
+  right: 12px;
+  top: 21px;
+  height: 100%;
+}
+
+.main-nav ul li {
+  display: inline-block;
+  padding: 2px;
+  color: white;
+}
+
+@media screen and (min-width: 2000px) {
+  .content.main {
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
+.content-item:last-child {
+  padding-bottom: 80px;
 }
 
 .content-item .grid-container {
@@ -53,6 +100,13 @@ body {
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   padding: 30px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1040px) {
+  .content-item .grid-container {
+    margin-bottom: 50px;
+  }
 }
 
 .content-item .grid-item {
@@ -64,47 +118,71 @@ body {
   background-color: #006bdc;
 }
 
+.content-item .grid-item:hover .content .text {
+  background-color: rgba(255, 255, 255, 0);
+}
+
 .content-item .grid-item .title {
-  height: 40px;
+  height: 50px;
   background-color: #004d9f;
   border-radius: 8px 10px 0 0;
-  padding: 6px;
+  padding: 10px;
   padding-left: 15px;
   color: white;
 }
 
+.content-item .grid-item .title img {
+  max-height: 22px;
+  max-width: 30px;
+}
+
 .content-item .grid-item .content {
-  background-image: url("../../assets/img/photo-01.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0px 7px 5px #b4b4b4;
-          box-shadow: 0px 7px 5px #b4b4b4;
-  border-radius: 0 0 50px 10px;
-  height: 90px;
+  border: 0px solid #2f2f2f;
+  -webkit-box-shadow: -1px 7px 5px #b4b4b4;
+          box-shadow: -1px 7px 5px #b4b4b4;
+  border-radius: 0 0 100px 10px;
+  height: 125px;
 }
 
 .content-item .grid-item .content .text {
-  border-radius: 0 0 50px 10px;
+  border-radius: 0 0 100px 10px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1040px) {
   .content-item .grid-container {
     display: -ms-grid;
     display: grid;
     grid-gap: 50px;
-    -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
-    padding: 30px;
+    -ms-grid-columns: 30% 30% 30%;
+        grid-template-columns: 30% 30% 30%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .content-item .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
     font-size: 30px;
   }
+}
+
+footer {
+  background-color: #004d9f;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
 }
 
 /* PAGES */

@@ -1,16 +1,18 @@
 /* style globale (pour le style globale qui ne bougera jamais : body, h1, p etc) */
 
 body {
-    font-family: 'Roboto';
-    // color: $color-red;
+    font-family: Helvetica, sans-serif;
+    color :$black;
 }
-.logo-police-svg {
-    width: 35px;
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    background-color: $gray;
     padding: 12px;
-    .cls-1 {
-        fill: $secondaryColor;
-    }
-    .cls-2 {
-        fill: $white;
-    }
+    font-weight: bold;
 }
+
