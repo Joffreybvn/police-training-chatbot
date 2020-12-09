@@ -26,7 +26,21 @@ class Chat {
 
 
     displayMessage(type, message) {
-        // TODO: Message appear to the UI
+        if (type == 0){
+            var node = document.createElement("LI");                 // Create a <li> node
+            var textnode = document.createTextNode(message);  
+            node.classList.add("chat");                     // Create a text node
+            node.classList.add("right");                     // Create a text node
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById("chats").appendChild(node);     // Append <li> to <ul> with id="myList"
+        } else {
+            var node = document.createElement("LI");                 // Create a <li> node
+            var textnode = document.createTextNode(message);        // Create a text node
+            node.classList.add("chat");                     // Create a text node
+            node.classList.add("left");  
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById("chats").appendChild(node);     // Append <li> to <ul> with id="myList"
+        }
     }
 
 
@@ -58,4 +72,4 @@ class Chat {
 }
 
 
-export { Chat };
+// export { Chat };

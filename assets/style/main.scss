@@ -1,16 +1,8 @@
 @charset 'utf-8';
 
-// #1 RESET THE CSS
+// RESET THE CSS
 @import url('resets/reset.css');
 
-// #2 IMPORT CSS/THEME FROM EXTERNAL LIB
-//EXEMPLE :
 
-@import url('librairies/lib.css');
-
-// #3 IMPORT YOUR DESIGN
 @import "partials/all";
-
- //   ...THE END...   \\
- 
-//...DON'T CODE HERE...\\
+@import 'librairies/chatroom';
