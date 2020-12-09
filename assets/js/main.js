@@ -39,3 +39,11 @@ specialization_menu.addEventListener('click', () => {
         easing: 'easeInOutQuad'
     });
 });
+
+const selector = document.querySelectorAll('.grid-item');
+for(i=0; i < selector.length; i++){
+    
+    selector[i].onclick = function() {
+        location.href = "chatbot";
+    }; 
+}

@@ -189,7 +189,7 @@ footer {
 .chat-container .chatroom h3 {
   background-color: #004d9f;
   height: 60px;
-  padding-top: 27px;
+  padding-top: 12px;
 }
 
 /* insert lib here */
@@ -239,7 +239,7 @@ footer {
 .chatroom .chats {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px;
+  padding-top: 20px;
   margin: 0;
   height: calc(100vh - 100px);
   overflow-y: scroll;
@@ -247,16 +247,17 @@ footer {
 }
 
 .chatroom .chats .chat {
-  background: rgba(255, 255, 255, 0.8);
+  /* background: rgba(255, 255, 255, 0.8); */
+  text-align: center;
   position: relative;
   padding: 5px 13px;
-  font-size: 14px;
+  font-size: 18px;
   border-radius: 10px;
   list-style: none;
-  float: left;
+  /* float: left; */
   clear: both;
-  margin: 10px 0 0 0;
-  max-width: 90%;
+  margin: auto;
+  max-width: 100%;
 }
 
 .chatroom .chats .chat img {
@@ -266,12 +267,18 @@ footer {
 
 .chatroom .chats .chat.left {
   border-bottom-left-radius: 0;
+  text-align: left;
 }
 
 .chatroom .chats .chat.right {
-  float: right;
-  clear: both;
+  color: #004d9f;
+  text-align: right;
   border-bottom-right-radius: 0;
+}
+
+.chatroom .chats .chat.nar {
+  text-align: center;
+  color: gray;
 }
 
 .chatroom .chats .chat .text {

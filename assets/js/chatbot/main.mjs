@@ -24,23 +24,35 @@ class Chat {
         })
     }
 
+    writerEffect(message) {
+        console.log(message)
+        let container = document.querySelector(".chat:last-child")
+        let characters = message.split("")
+        console.log(characters)
 
-    displayMessage(type, message) {
-        if (type == 0){
-            var node = document.createElement("LI");                 // Create a <li> node
-            var textnode = document.createTextNode(message);  
-            node.classList.add("chat");                     // Create a text node
-            node.classList.add("right");                     // Create a text node
-            node.appendChild(textnode);                              // Append the text to <li>
-            document.getElementById("chats").appendChild(node);     // Append <li> to <ul> with id="myList"
-        } else {
-            var node = document.createElement("LI");                 // Create a <li> node
-            var textnode = document.createTextNode(message);        // Create a text node
-            node.classList.add("chat");                     // Create a text node
-            node.classList.add("left");  
-            node.appendChild(textnode);                              // Append the text to <li>
-            document.getElementById("chats").appendChild(node);     // Append <li> to <ul> with id="myList"
+        for (let i = 0; i < characters.length; i++) {
+            setTimeout(() => {
+                container.innerHTML += characters[i]
+             }, 20 * i);
         }
+    }
+   
+    displayMessage(type, message) {
+        var node = document.createElement("LI");                
+        // var textnode = document.createTextNode(message);  
+        node.classList.add("chat");                     
+        if (type == 0){
+            node.classList.add("right");                    
+        } else if (type == 1){
+            node.classList.add("left");                    
+        }
+        else {
+            node.classList.add("nar");  
+        }
+        // node.appendChild(textnode);                             
+        document.getElementById("chats").appendChild(node); 
+        //this.loop(message);
+        this.writerEffect(message)
     }
 
 
