@@ -19,4 +19,4 @@ deploy:
   script:
     docker push joffreybvn/police-training-bot:latest;
   on:
-    branch: master
+    branch: bot-training
