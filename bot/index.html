@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<div id="webchat"/>
+<script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+//hello
+<script>
+  WebChat.default.init({
+    selector: "#webchat",
+    initPayload: "/get_started",
+    interval: 1000, // 1000 ms between each message
+    customData: {"userId": "123"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+    socketUrl: "http://localhost:5005",
+    socketPath: "/socket.io/",
+    title: "Police Hackathon",
+    subtitle: "BeCode",
+    inputTextFieldHint: "Type a message...",
+    connectingText: "Waiting for server...",
+    fullScreenMode: false,
+    profileAvatar: "http://to.avat.ar",
+    openLauncherImage: 'myCustomOpenImage.png',
+    closeLauncherImage: 'myCustomCloseImage.png',
+    params: {
+      images: {
+        dims: {
+          width: 300,
+          height: 200,
+        }
+      },
+      storage: "local"
+    }
+  })
+</script>
+</body>
+</html>
