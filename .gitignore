@@ -157,3 +157,5 @@ src/api/v1/__pycache__/
 src/geocoder/__pycache__/
 
 venv/
+actions/__pycache__/
+bot/actions/__pycache__/
