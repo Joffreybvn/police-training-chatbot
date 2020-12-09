@@ -1,4 +1,10 @@
 
+# safelist
+branches:
+  only:
+  - bot-training
+  - API-variables
+
 language: python
 python:
   - 3.8
