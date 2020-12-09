@@ -1,0 +1,28 @@
+
+# safelist
+branches:
+  only:
+  - bot-training
+  - API-variables
+
+language: python
+python:
+  - 3.8
+services:
+  - docker
+
+install:
+  - pip install -r requirements.txt
+
+before_script:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+
+script:
+  - docker build -t joffreybvn/police-training-story:latest .
+
+deploy:
+  provider: script
+  script:
+    docker push joffreybvn/police-training-story:latest;
+  on:
+    branch: API-variables
