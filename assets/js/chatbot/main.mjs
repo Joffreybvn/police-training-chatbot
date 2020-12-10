@@ -17,7 +17,7 @@ class Chat {
         this.displayMessage(0, message)
 
         // Send the message to the bot and display its response
-        this.sendRequest('Hello').then(response => {
+        this.sendRequest(message).then(response => {
             this.displayMessage(1, response)
 
             // TODO: implement a way to recognize Bot and narrator messages
