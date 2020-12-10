@@ -59,16 +59,16 @@ nlu:
 
 - intent: ask_what_happened
   examples: |
-    - what happened ?
-    - what has happened ?
-    - hhat happened to you ?
+    - what happened?
+    - what has happened?
+    - hhat happened to you?
     - tell me what happened
 
 - intent: ask_where_happened
   examples: |
-    - where did it happen ?
-    - where did it take place ?
-    - where that occurred ?
+    - where did it happen?
+    - where did it take place?
+    - where that occurred?
 
 # Other intents
 # -----------------------------------------------------------------------------

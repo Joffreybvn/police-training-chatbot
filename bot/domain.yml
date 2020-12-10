@@ -8,9 +8,9 @@ intents:
 - goodbye
 - affirm
 - deny
-- bot_challenge
 - ask_what_happened
 - ask_where_happened
+- bot_challenge
 
 responses:
   utter_greet:
