@@ -28,4 +28,4 @@ responses:
     - text: At my apartment, in my room.
 
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+    - text: I am a bot, powered by Rasa.
