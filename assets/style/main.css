@@ -76,6 +76,14 @@ h3 {
   height: 100%;
 }
 
+@media screen and (min-width: 600px) {
+  .main-nav ul {
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+}
+
 .main-nav ul li {
   display: inline-block;
   padding: 2px;
@@ -103,7 +111,7 @@ h3 {
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 900px) {
   .content-item .grid-container {
     margin-bottom: 50px;
   }
@@ -154,7 +162,7 @@ h3 {
   padding: 20px;
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 900px) {
   .content-item .grid-container {
     display: -ms-grid;
     display: grid;
@@ -258,6 +266,18 @@ footer {
   clear: both;
   margin: auto;
   max-width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .chatroom .chats .chat {
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .chatroom .chats .chat {
+    max-width: 50%;
+  }
 }
 
 .chatroom .chats .chat img {

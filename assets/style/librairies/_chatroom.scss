@@ -62,6 +62,12 @@ $linkColor: #3498db;
       clear: both;
       margin: auto;
       max-width: 100%;
+      @media screen and (min-width: 900px) {
+        max-width: 70%;
+      }
+      @media screen and (min-width: 1600px) {
+        max-width: 50%;
+      }
 
       img {
         max-width: 100%;

@@ -24,7 +24,7 @@ general_menu.addEventListener('click', () => {
     // use anime.js
     anime({
         targets: scrollElement,
-        scrollTop:general.offsetTop - 60,
+        scrollTop: general.offsetTop - 60,
         duration: 500,
         easing: 'easeInOutQuad'
     });
@@ -34,16 +34,16 @@ specialization_menu.addEventListener('click', () => {
     // use anime.js
     anime({
         targets: scrollElement,
-        scrollTop:specialization.offsetTop - 60,
+        scrollTop: specialization.offsetTop - 60,
         duration: 500,
         easing: 'easeInOutQuad'
     });
 });
 
 const selector = document.querySelectorAll('.grid-item');
-for(i=0; i < selector.length; i++){
-    
-    selector[i].onclick = function() {
+for (i = 0; i < selector.length; i++) {
+
+    selector[i].onclick = function () {
         location.href = "chatbot";
-    }; 
+    };
 }
