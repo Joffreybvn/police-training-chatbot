@@ -14,11 +14,11 @@ class Chat {
     sendMessage(message) {
 
         // Display the message written bu user to the chat
-        this.displayMessage('user', message)
+        this.displayMessage(0, message)
 
         // Send the message to the bot and display its response
         this.sendRequest('Hello').then(response => {
-            this.displayMessage('bot', response)
+            this.displayMessage(1, response)
 
             // TODO: implement a way to recognize Bot and narrator messages
         })
