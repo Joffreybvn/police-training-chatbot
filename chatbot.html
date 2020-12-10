@@ -48,12 +48,14 @@
 
     <script src="./assets/js/chatbot/main.mjs"></script>
     <script type="module">
-        // import * as bot from './assets/js/chatbot/main.mjs';
         const chat = new Chat('https://bot.chatpol.be/webhooks/rest/webhook')
+
         document.querySelector("#submit").addEventListener("click", function(event) {
             event.preventDefault();
+
             chat.sendMessage(document.getElementById("text").value);
             document.getElementById("text").value = ""
+
         }, false);
 </script>
 

@@ -18,17 +18,15 @@ class Chat {
 
         // Send the message to the bot and display its response
         this.sendRequest('Hello').then(response => {
-            this.displayMessage('bot', response.message)
+            this.displayMessage('bot', response)
 
             // TODO: implement a way to recognize Bot and narrator messages
         })
     }
 
     writerEffect(message) {
-        console.log(message)
         let container = document.querySelector(".chat:last-child")
         let characters = message.split("")
-        console.log(characters)
 
         for (let i = 0; i < characters.length; i++) {
             setTimeout(() => {
@@ -78,8 +76,11 @@ class Chat {
             })
         });
 
+        console.log(response)
+
         // Return the response message
-        return await response.json();
+        const result = await response.json();
+        return result[0].text
     }
 }
 
